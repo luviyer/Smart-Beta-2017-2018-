@@ -1,0 +1,3 @@
+# Smart-Beta-2017-2018
+
+So far, universe construction is completed. Next up is the actual factor scores...
