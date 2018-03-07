@@ -2,25 +2,13 @@ import pandas as pd
 import datetime
 import os
 import pickle
-
-def last_day_of_month(any_day):
-    next_month = any_day.replace(day=28) + datetime.timedelta(days=4)
-    return next_month - datetime.timedelta(days=next_month.day)
+import csv_file_manipulations as cfm
 
 
-def get_all_months_in_year_range(start_year, end_year):
-    month_range = []
-    for year in range(start_year, end_year):
-        for month in range(1, 13):
-            month_to_add = last_day_of_month(datetime.date(year, month, 1))
-            month_range.append(month_to_add.strftime('%Y%m'))
-    return month_range
-
-'''Now assume that we have our date range, we need to know if the current permno is in our universe'''
 def get_universe(start_year, end_year, exchcd_folder_path, exchange_code):
     # Iterate over all the permnos (files in the folder)
     universe = {}
-    all_months = set(get_all_months_in_year_range(start_year, end_year))
+    all_months = set(cfm.get_all_months_in_year_range(start_year, end_year))
 
     for file in os.listdir(exchcd_folder_path):
         df = pd.read_csv(exchcd_folder_path+'/'+file, header=None, names=['date', 'exchcd'])
