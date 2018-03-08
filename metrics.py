@@ -10,10 +10,10 @@ def return_on_equity(df):
 
     '''
 
-    df['bvps'] = (df['atq']-df['ltq'])/(df['cshoq']*df['mkvaltq'])
+    df['bvps'] = (df['atq']-df['ltq'])/df['cshoq']
     df['roe'] = df['epsx12']/df['bvps']
 
-    return df
+    return df[['roe']]
 
 
 def debt_to_equity(df):
@@ -24,10 +24,10 @@ def debt_to_equity(df):
 
     '''
 
-    df['bv'] = (df['atq']-df['ltq'])/df['mkvaltq']
+    df['bv'] = df['atq']-df['ltq']
     df['dte'] = df['ltq']/df['bv']
 
-    return df
+    return df[['dte']]
 
 
 if __name__ == '__main__':
