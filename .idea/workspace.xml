@@ -22,8 +22,8 @@
       <file leaf-file-name="score_calculation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/score_calculation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="86" column="37" lean-forward="true" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+            <state relative-caret-position="362">
+              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -326,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520629455587</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created function to make crsp permno files">
+      <created>1520630922774</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1520630922775</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,14 +364,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created function to make crsp permno files" />
     <MESSAGE value="Adds functions to make monthly time series, and calculate ROE metric" />
     <MESSAGE value="Comments and debt to equity metric added" />
     <MESSAGE value="Fills in missing nan values in Simon's score csv format. Rough edits." />
     <MESSAGE value="Some time optimization" />
     <MESSAGE value="Quality score calculated using dte and roe metrics. Some more optimization." />
     <MESSAGE value="Updates README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates README" />
+    <MESSAGE value="Created function to make crsp permno files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created function to make crsp permno files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/score_calculation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="86" column="37" lean-forward="true" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+        <state relative-caret-position="362">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

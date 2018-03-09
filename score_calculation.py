@@ -86,8 +86,8 @@ def quality_score(csv_file, separate_csv_folder_name, permnos_dict_file, desired
     for_neg_z_score = 1 - avg_z_score
     for_pos_z_score = 1 + avg_z_score
     quality_score = for_pos_z_score.where(avg_z_score >= 0, np.power(for_neg_z_score, -1))
-    quality_score.to_csv(desired_output_filename)
 
+    quality_score.to_csv(desired_output_filename)
     print('Quality score file has been created.')
 
 if __name__ == '__main__':
