@@ -8,9 +8,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Smart Beta Intro Presentation/portfolio_construction/README.md" afterPath="$PROJECT_DIR$/../Smart Beta Intro Presentation/portfolio_construction/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Smart Beta Intro Presentation/portfolio_construction/clean_data.py" afterPath="$PROJECT_DIR$/../Smart Beta Intro Presentation/portfolio_construction/clean_data.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/permnos_dict_nyse_197301_201612.txt" afterPath="$PROJECT_DIR$/permnos_dict_nyse_197301_201612.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/score_calculation.py" afterPath="$PROJECT_DIR$/score_calculation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/universe_construction.py" afterPath="$PROJECT_DIR$/universe_construction.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="score_calculation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="score_calculation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/score_calculation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1292">
@@ -41,6 +39,19 @@
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="306">
+                <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -113,11 +124,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/csv_file_manipulations.py" />
         <option value="$PROJECT_DIR$/metrics.py" />
         <option value="$PROJECT_DIR$/universe_construction.py" />
         <option value="$PROJECT_DIR$/score_calculation.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -378,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520530335231</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Quality score calculated using dte and roe metrics. Some more optimization.">
+      <created>1520628641887</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1520628641887</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -414,7 +432,8 @@
     <MESSAGE value="Comments and debt to equity metric added" />
     <MESSAGE value="Fills in missing nan values in Simon's score csv format. Rough edits." />
     <MESSAGE value="Some time optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some time optimization" />
+    <MESSAGE value="Quality score calculated using dte and roe metrics. Some more optimization." />
+    <option name="LAST_COMMIT_MESSAGE" value="Quality score calculated using dte and roe metrics. Some more optimization." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,16 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/series.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -859,6 +868,17 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
