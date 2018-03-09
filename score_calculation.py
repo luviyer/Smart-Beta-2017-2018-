@@ -83,7 +83,9 @@ def quality_score(csv_file, separate_csv_folder_name, permnos_dict_file, desired
         return z_score
 
     avg_z_score = (standardize(roe) + standardize(dte))/2.0  # Probably shouldn't hard code this...
-    quality_score = (1+avg_z_score).where(avg_z_score >= 0, np.power(1-avg_z_score, -1))
+    for_neg_z_score = 1 - avg_z_score
+    for_pos_z_score = 1 + avg_z_score
+    quality_score = for_pos_z_score.where(avg_z_score >= 0, np.power(for_neg_z_score, -1))
     quality_score.to_csv(desired_output_filename)
 
     print('Quality score file has been created.')
