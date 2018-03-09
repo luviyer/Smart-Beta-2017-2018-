@@ -19,9 +19,9 @@ def get_universe(start_year, end_year, exchcd_folder_path, exchange_code):
         for yyyymm in df.index:
             if yyyymm in all_months and df.loc[yyyymm, 'exchcd'] == exchange_code:
                 if yyyymm not in universe.keys():
-                    universe[yyyymm] = []
+                    universe[yyyymm] = set()
 
-                universe[yyyymm].append(file.split('.')[0])  # Only take the permno into the dict
+                universe[yyyymm].add(file.split('.')[0])  # Only take the permno into the dict
     return universe
 
 def make_crsp_txt_file(permno_dict_file, desired_filename):
@@ -39,17 +39,17 @@ def make_crsp_txt_file(permno_dict_file, desired_filename):
     file.close()
 
 if __name__ == '__main__':
-    # exchcd_folder_path = "C:/Users/Luv Iyer/Documents/Simon Data/permno_monthly_192601_201612_exchcds"
-    #
-    # # No data from 2017 is included. Only goes up to 2016-12. NYSE Exchange Code is 1.
-    # universe = get_universe(1973, 2017, permno_folder_path, exchange_code=1)
+    exchcd_folder_path = "C:/Users/Luv Iyer/Documents/Simon Data/permno_monthly_192601_201612_exchcds"
+
+    # No data from 2017 is included. Only goes up to 2016-12. NYSE Exchange Code is 1.
+    universe = get_universe(1973, 2017, exchcd_folder_path, exchange_code=1)
 
 
     # The following code makes the .txt file of permnos that are uploaded to crsp
-    make_crsp_txt_file('permnos_dict_nyse_197301_201612.txt', 'nyse_crsp_permnos_197301_201612.txt')
+    # make_crsp_txt_file('permnos_dict_nyse_197301_201612.txt', 'nyse_crsp_permnos_197301_201612.txt')
 
-    # with open('permnos_dict_nyse_197301_201612.txt', 'wb+') as f:
-    #     pickle.dump(universe, f, pickle.HIGHEST_PROTOCOL)
+    with open('permnos_dict_nyse_197301_201612.txt', 'wb+') as f:
+        pickle.dump(universe, f, pickle.HIGHEST_PROTOCOL)
 
     # with open('permnos_dict_nyse_197301_201612.txt', 'rb') as f:
     #     nyse = pickle.load(f)
