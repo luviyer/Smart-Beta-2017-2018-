@@ -1,7 +1,7 @@
 # Smart-Beta-2017-2018
 
 This project intends to examine Smart Beta strategies e.g. value, momentum, quality, and minimum volatility
-and see how such strategies, operated by various funds like BlackRock, JP Morgan, etc. compare with baseline strategies
+and see how such strategies, operated by various firms like BlackRock, JP Morgan, etc. compare with baseline strategies
 that we can create using metrics and practices that seem to be consensus in the industry.
 
 Index methodologies will be investigated to find the common metrics used by similar strategy funds, and regression
