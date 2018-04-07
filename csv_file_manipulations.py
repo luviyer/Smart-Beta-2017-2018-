@@ -49,6 +49,7 @@ def csv_separate_permnos(csv_file, folder_name, make_monthly_data):
         # Only the year and month are necessary for the index
         truncated_months = [str(elem)[:-2] for elem in permno_df['datadate']]
         permno_df.set_index(pd.Series(truncated_months), inplace=True)
+        permno_df.sort_index(inplace=True)  # Do this in case the data is not actually sorted.
 
         if make_monthly_data:
             permno_df = make_monthly_time_series(permno_df)
@@ -84,4 +85,4 @@ def make_monthly_time_series(df):
 
 
 if __name__ == '__main__':
-    csv_separate_permnos('roe_test.csv', 'Quality Permnos', make_monthly_data=True)
+    csv_separate_permnos('minvol_test.csv', 'Min Vol Permnos', make_monthly_data=True)
